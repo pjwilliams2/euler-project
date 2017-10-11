@@ -27,8 +27,8 @@
 *.lib
 
 # Compilation directories
-bin
-obj
+bin/
+obj/
 
 # Executables
 *.exe
