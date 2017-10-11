@@ -1,0 +1,10 @@
+/Users/pjwilliams/cat-detector/euler-project/5/bin/Debug/netcoreapp2.0/Euler5.deps.json
+/Users/pjwilliams/cat-detector/euler-project/5/bin/Debug/netcoreapp2.0/Euler5.runtimeconfig.json
+/Users/pjwilliams/cat-detector/euler-project/5/bin/Debug/netcoreapp2.0/Euler5.runtimeconfig.dev.json
+/Users/pjwilliams/cat-detector/euler-project/5/bin/Debug/netcoreapp2.0/Euler5.dll
+/Users/pjwilliams/cat-detector/euler-project/5/bin/Debug/netcoreapp2.0/Euler5.pdb
+/Users/pjwilliams/cat-detector/euler-project/5/obj/Debug/netcoreapp2.0/Euler5.csproj.CoreCompileInputs.cache
+/Users/pjwilliams/cat-detector/euler-project/5/obj/Debug/netcoreapp2.0/Euler5.AssemblyInfoInputs.cache
+/Users/pjwilliams/cat-detector/euler-project/5/obj/Debug/netcoreapp2.0/Euler5.AssemblyInfo.cs
+/Users/pjwilliams/cat-detector/euler-project/5/obj/Debug/netcoreapp2.0/Euler5.dll
+/Users/pjwilliams/cat-detector/euler-project/5/obj/Debug/netcoreapp2.0/Euler5.pdb
