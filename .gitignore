@@ -26,11 +26,13 @@
 *.a
 *.lib
 
+# Compilation directories
+bin
+obj
+
 # Executables
 *.exe
 *.out
 *.app
-bin
-obj/Debug
 *.dll
 
