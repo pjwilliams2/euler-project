@@ -2,6 +2,8 @@
 using System.IO;
 using System.Collections.Generic;
 
+using Euler;
+
 namespace Euler3
 {
     class Program
@@ -17,7 +19,7 @@ namespace Euler3
             {
                 for(long i = 2; i <= intermediate; i++)
                 {
-                    if(isPrime(i) && (intermediate % i == 0))
+                    if(Euler.MathExt.IsPrime(i) && (intermediate % i == 0))
                     {
                         done = i == intermediate;
                         intermediate /= i;
@@ -29,15 +31,6 @@ namespace Euler3
 
             foreach(var num in primeFactors)
                 Console.WriteLine("Prime factor: " + num);
-        }
-
-        static bool isPrime(long number)
-        {
-            for(long i = 2; i < Math.Sqrt(number); i++)
-                if(number % i == 0)
-                    return false;
-            
-            return true;
         }
     }
 }
