@@ -15,13 +15,14 @@ namespace Euler102
                 var coords = ParseTriangleCoords(rdr.ReadLine());
                 double[] pt_a = coords[0], pt_b = coords[1], pt_c = coords[2];
 
-                //make sure the x coordinate of the angle bisector and the opposite line segment are between the x's of the line segment
-                // A bisect BC x coord
+                //make sure the x coordinate of the bisector, AO (through A and origin), and the opposite line segment 
+                // are between the x's of the line segment
+                // Line AO bisect BC x coord
                 // Solving for: Ax / Ay * X = (Cy - By) / (Cx - Bx) * (X - Bx) + By
                 double x1 = ((pt_b[1] - pt_c[1]) / (pt_c[0] - pt_b[0]) * pt_b[0] + pt_b[1]) / (pt_a[1] / pt_a[0] + (pt_c[1] - pt_b[1]) / (pt_b[0] - pt_c[0]));
-                // B bisect AC x coord
+                // Line BO bisect AC x coord
                 double x2 = ((pt_a[1] - pt_c[1]) / (pt_c[0] - pt_a[0]) * pt_a[0] + pt_a[1]) / (pt_b[1] / pt_b[0] + (pt_c[1] - pt_a[1]) / (pt_a[0] - pt_c[0]));
-                // C bisect AB x coord
+                // Line CO bisect AB x coord
                 double x3 = ((pt_a[1] - pt_b[1]) / (pt_b[0] - pt_a[0]) * pt_a[0] + pt_a[1]) / (pt_c[1] / pt_c[0] + (pt_b[1] - pt_a[1]) / (pt_a[0] - pt_b[0]));
 
                 if((x1 < pt_b[0] && x1 < pt_c[0]) || (x1 > pt_b[0] && x1 > pt_c[0]) ||
