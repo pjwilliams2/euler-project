@@ -19,7 +19,7 @@ namespace Euler3
             {
                 for(long i = 2; i <= intermediate; i++)
                 {
-                    if(Euler.MathExt.IsPrime(i) && (intermediate % i == 0))
+                    if(Euler.Prime.IsPrime(i) && (intermediate % i == 0))
                     {
                         done = i == intermediate;
                         intermediate /= i;

@@ -11,7 +11,7 @@ namespace Euler7
             var primeNum = 0D;
 
             for(double num = 2; ordinalIndex < maxOrdinalIndex; num++)
-                if(Euler.MathExt.IsPrime(num))
+                if(Euler.Prime.IsPrime(num))
                 {
                     ordinalIndex++;
                     primeNum = num;
