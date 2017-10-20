@@ -42,5 +42,28 @@ namespace Euler
 
             return result;
         }
+
+        public static double[] GetPrimeFactors(double number)
+        {
+            var primeFactors = new List<double>();
+            var done = false;
+            var intermediate = number;
+
+            while(!done)
+            {
+                for(double i = 2; i <= intermediate; i++)
+                {
+                    if(IsPrime(i) && (intermediate % i == 0))
+                    {
+                        done = i == intermediate;
+                        intermediate /= i;
+                        primeFactors.Add(i);
+                        break;
+                    }
+                }
+            }
+
+            return primeFactors.ToArray();
+        }
     }
 }
